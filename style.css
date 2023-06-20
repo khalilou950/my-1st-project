@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+*{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+
+  
+}
+
+
+
+header{background-color: ffca3a;
+    font-size: 45px;
+    text-align: center;}
+    h2{text-align: center;
+    font-size: 40;}
+
+
+    .input-box input:focus,
+    .input-box input:valid{
+      border-color: #ba0e0e;
+    }
+
+
+
+.input-box.button input{
+  margin: 20px 40px  ;
+  border-radius: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #ba0e0e;
+  cursor: pointer;
+}
+.input-box.button input:hover{
+  background: #ba0e0e;
+}
+
+    body{ background-color: rgba(175, 238, 227, 0.512);}
+    .nn{color: rgb(238, 12, 12);
+    font-size: 20px;
+    ;}

@@ -1,0 +1,101 @@
+<?php
+if(isset($_POST['submit'])){
+  $nom = $_POST['nom'];
+  $prenom = $_POST['prenom'];
+  $mot = $_POST['mot'];
+
+  $host = 'localhost';
+  $user = 'root';
+  $pass = '';
+  $dbname = 'sinscrire';
+
+  $conn = mysqli_connect($host,$user,$pass,$dbname);
+  $sql = "INSERT INTO utilisateur(nom,prenom,mot) values('$nom','$prenom','$mot')";
+  mysqli_query($conn,$sql);
+}
+  
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title> Khalil's cars </title>
+    </head>
+    <body>
+      <header>
+          <h1> <u> Khalil's cars </u> </h1>
+      </header>
+          <h2> Best cars in the world! </h2>
+          <img src="https://www.larevueautomobile.com/images/articles-md/Volkswagen/Golf-8-GTD-my-2020/Exterieur/volkswagen-golf-8-gtd_MD_1.jpg">
+        
+          <p> We have <b> best cars ever! </b> </p>
+          <ol>
+            .Tear up the streets not the planet
+          </ol>
+          <ol>
+            .The Best in Performance Luxury
+          </ol>
+          <ol>
+            .The art of travel
+          </ol>
+          <p class="nn"> <u> Register now! :</u>  </p> 
+         
+        
+          <label for ="Size">
+             Type:</label>
+           <select>
+           <option> micro </option>
+           <option> sedan </option>
+           <option> coupe </option>
+           <option> cabriolet</option>   
+          </select>
+        
+          <label for ="color">
+            Color: </label>
+            <select>
+            <option> Red </option>
+            <option> Blue </option>
+            <option> White </option>
+            <option> Gray </option>
+            <option> Black </option>
+            </select>
+
+           <br> </br>    
+
+
+        <form action="#" method="POST">
+            Full Name:
+            <div class="input-box">
+            <input type="text" name="nom"  required>
+            </div>
+
+            <br> </br> 
+            Email Address:
+            <div  class="input-box">
+            <input for="Email" type="text" name="prenom" " required>
+            </div>
+
+            <br> </br> 
+            Password:
+            <div class="input-box">
+            <input type="password" name="mot"  required>
+            </div>
+
+          
+          <div class="input-box button" >
+          <input  name="submit"  type="Submit" value="Submit">
+          </div>
+
+        </form>
+
+
+
+
+
+          Coded by Khalil Bennabi     
+    </body>
+</html>        
+    
